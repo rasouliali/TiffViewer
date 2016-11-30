@@ -1,0 +1,47 @@
+﻿<html>
+<head>
+<title>tiff viewer</title>
+<script src="./jquery-1.10.1.min.js"></script>
+<script src="./tiff.min.js" ></script>
+</head>
+<body>
+<script>
+function msieversion() 
+{
+    var ua = window.navigator.userAgent;
+    var msie = ua.indexOf("MSIE ");
+
+    if (msie > 0) // If Internet Explorer, return version number
+    {
+		return true;
+        //alert(parseInt(ua.substring(msie + 5, ua.indexOf(".", msie))));
+    }
+    else  // If another browser, return 0
+    {
+		return false;
+        //alert('otherbrowser');
+    }
+
+    return false;
+}
+
+
+$(function(){
+	if(msieversion()==false){
+		var xhr = new XMLHttpRequest();
+		xhr.responseType = 'arraybuffer';
+		xhr.open('GET', "image.tif");
+		xhr.onload = function (e) {
+			var tiff = new Tiff({buffer: xhr.response});
+			var canvas = tiff.toCanvas();
+			document.body.append(canvas);
+		};
+		xhr.send();
+	}else{
+		var imgElem=$('<img src="image.tif" />');
+		$('body').append(imgElem);
+	}
+})
+</script>
+</body>
+</html>
