@@ -27,7 +27,7 @@ $(function(){
 	if(msieversion()==false){
 		var xhr = new XMLHttpRequest();
 		xhr.responseType = 'arraybuffer';
-		xhr.open('GET', "https://github.com/rasouliali/rasouliali.github.io/blob/master/image.tif?raw=true");
+		xhr.open('GET', "./image.tif");
 		xhr.onload = function (e) {
 			var tiff = new Tiff({buffer: xhr.response});
 			var canvas = tiff.toCanvas();
