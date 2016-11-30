@@ -5,8 +5,8 @@ ie by default show the tiff files, so this code for recognize ie browser(true me
 
 <code>
 function msieversion()// this function for recognize ie from other browser  
-
 {  
+
     var ua = window.navigator.userAgent;//inner commands  
     
     var msie = ua.indexOf("MSIE ");  
