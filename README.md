@@ -23,7 +23,7 @@ function msieversion()
 } 
 </code>
 
-for load tiff in firefox and chrom used codes from bottom links:
+for load tiff in firefox and chrome used codes from bottom links:
 https://github.com/seikichi/tiff.js/tree/master
 
-demo upload in this "tiff All Browser.html" file download and test it. it is work...
+this project is  html demo. download this project then extract and run "tiff All Browser.html" file and test it. it is work...
