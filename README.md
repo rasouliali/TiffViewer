@@ -42,3 +42,4 @@ for load tiff in firefox and chrome used codes from bottom links:
 https://github.com/seikichi/tiff.js/tree/master
 
 this project is  html demo. download this project then extract and run "tiff All Browser.html" file and test it. it is work...
+<a href="https://rasouliali.github.io/TiffViewer/" >online Demo</a>
