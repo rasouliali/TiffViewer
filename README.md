@@ -3,7 +3,7 @@ TiffViewer For ie, chrome and firefox browser
 
 ie by default show the tiff files, so this code for recognize ie browser(true means ie and false means others): 
 
-<script>
+<code>
 function msieversion() 
 {
     var ua = window.navigator.userAgent;
@@ -21,7 +21,7 @@ function msieversion()
     }
     return false;
 } 
-</script>
+</code>
 
 for load tiff in firefox and chrom used codes from bottom links:
 https://github.com/seikichi/tiff.js/tree/master
